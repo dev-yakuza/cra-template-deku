@@ -1,0 +1,33 @@
+name: Check the source code
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  check:
+    name: Linters and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '20.3.0'
+      - run: npx create-react-app development --template file:./
+      - name: Prettier
+        working-directory: ./development
+        run: npm run format
+      - name: ESLint
+        working-directory: ./development
+        run: npm run lint
+      - name: CSpell
+        working-directory: ./development
+        run: npm run check:spell
+      - name: remark-lint
+        working-directory: ./development
+        run: npm run lint:md
+      - name: Stylelint
+        working-directory: ./development
+        run: npm run lint:css
+      - name: Test
+        working-directory: ./development
+        run: npm run test:ci

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> Rendered well 1`] = `
+.emotion-0 {
+  color: initial;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div>
+  <a
+    class="emotion-0"
+    href="/posts/1"
+  >
+    test link
+  </a>
+</div>
+`;
