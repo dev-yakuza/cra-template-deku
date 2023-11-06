@@ -2,8 +2,29 @@
 
 This project is a template of create-react-app. You can use this by running the following command.
 
+1. Enable the `legacy-peer-deps` option globally for installing the dependencies.
+
+```bash
+npm config set legacy-peer-deps true
+```
+
+2. Create the React project with the `DeKu` template.
+
 ```bash
 npx create-react-app [YOUR_PROJECT_NAME] --template deku
+```
+
+3. Enable the `legacy-peer-deps` option locally for installing the dependencies.
+
+```bash
+cd [YOUR_PROJECT_NAME]
+npm config --location=project set legacy-peer-deps=true
+```
+
+4. Disable the `legacy-peer-deps` option globally. (The default of this option is `false`. See the details on the [document](https://docs.npmjs.com/cli/v7/using-npm/config#legacy-peer-deps))
+
+```bash
+npm config set legacy-peer-deps false
 ```
 
 This project uses the followings:
@@ -18,3 +39,7 @@ This project uses the followings:
 If you want more details of the project, see the following document.
 
 - DeKu template for create-react-app: [README](./template/README.md)
+
+```
+
+```
