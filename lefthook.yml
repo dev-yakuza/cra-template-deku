@@ -1,0 +1,5 @@
+pre-commit:
+  parallel: true
+  commands:
+    PrepareDeploy:
+      run: node deploy.js && git add .

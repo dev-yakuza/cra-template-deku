@@ -1,0 +1,20 @@
+pre-commit:
+  parallel: true
+  commands:
+    Prettier:
+      run: npm run format
+    ESLint:
+      files: git diff --name-only HEAD | grep -e \.ts$ -e \.tsx$ || echo ''
+      run: npm run lint
+    CSpell:
+      run: npm run check:spell
+    remark-lint:
+      glob: '*.{md,markdown}'
+      run: npm run lint:md
+    Stylelint:
+      files: git diff --name-only HEAD | grep -e \.tsx$ -e \.css$ || echo ''
+      run: npm run lint:css
+    Test:
+      files: git diff --name-only HEAD | grep -e \.ts$ -e \.tsx$ || echo ''
+      run: npm run test:ci
+

@@ -27,6 +27,8 @@ npm config --location=project set legacy-peer-deps=true
 npm config set legacy-peer-deps false
 ```
 
+## Contribute
+
 This project uses the followings:
 
 - React UI library: [MUI](https://mui.com/), [Emotion](https://emotion.sh/)
@@ -40,6 +42,14 @@ If you want more details of the project, see the following document.
 
 - DeKu template for create-react-app: [README](./template/README.md)
 
+You can add libraries or modify the project in the `development` folder. **You don't need to modify in the `template` folder or `template.json` file.**
+
+After contributing, just execute the following command.
+
+```bash
+node deploy.js
 ```
 
-```
+It will copy all contents to the `template` folder and `template.json` file for deployment.
+
+If you use `Lefthook`, it will be executed automatically when you commit the code.
