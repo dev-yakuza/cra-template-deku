@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlogItem /> Rendered well 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px #d9d9d9,-10px -10px 30px #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.emotion-1 {
+  color: initial;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 emotion-0"
+  >
+    <a
+      class="emotion-1"
+      href="/posts/1"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 emotion-2"
+      >
+        This is the blog title.
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 emotion-2"
+      >
+        This is the blog contents.
+      </p>
+    </a>
+  </div>
+</div>
+`;

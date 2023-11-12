@@ -12,7 +12,9 @@ jobs:
       - uses: actions/setup-node@v3.6.0
         with:
           node-version: '20.3.0'
-      - run: npx create-react-app development --template file:./
+      - name: Install dependencies
+        working-directory: ./development
+        run: npm install
       - name: Prettier
         working-directory: ./development
         run: npm run format

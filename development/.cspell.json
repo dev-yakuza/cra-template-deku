@@ -1,0 +1,19 @@
+{
+  "words": [
+    "tanstack",
+    "autodocs",
+    "webfonts",
+    "TTFB",
+    "Deku",
+    "Lefthook"
+  ],
+  "ignorePaths": [
+    "__snapshots__",
+    "package.json",
+    "package-lock.json",
+    "node_modules",
+    "lefthook.yml",
+    "./src/utils/test/mocks/api/mockData/posts.json",
+    "./src/utils/test/mocks/api/mockData/post.json"
+  ]
+}
