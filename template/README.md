@@ -129,16 +129,18 @@ npm run storybook
 
 And, open [http://localhost:6006/](http://localhost:6006/) in your browser.
 
-### Sample component
+### Generate code by template
 
-There is a sample component for the project.
+This project uses `Hygen` to generate code automatically with the template.
 
-- Sample Button: `components/SampleButton`.
+- Hygen: [https://www.hygen.io/](https://www.hygen.io/)
 
-The component has three files.
+You can generate the code by the following commands.
 
-- `index.tsx`: this file is the implementation of the component.
-- `index.test.tsx`: this file is the test file for the component.
-- `index.stories.tsx`: this file is the storybook file for the component.
+#### Component
 
-And, there is the `__snapshots__` folder that is the result of the Jest [snapshot](https://jestjs.io/docs/snapshot-testing) test. So, you don't need to modify it manually.
+You can generate the component by the following command.
+
+```bash
+npx hygen component create
+```
