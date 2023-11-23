@@ -86,6 +86,7 @@
     "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-storybook": "^0.6.15",
     "history": "^5.3.0",
+    "hygen": "^6.2.11",
     "lefthook": "^1.5.2",
     "postcss-styled-syntax": "^0.5.0",
     "prettier": "^3.0.3",

@@ -5,7 +5,9 @@
     "webfonts",
     "TTFB",
     "Deku",
-    "Lefthook"
+    "Lefthook",
+    "typeof",
+    "hygen"
   ],
   "ignorePaths": [
     "__snapshots__",
